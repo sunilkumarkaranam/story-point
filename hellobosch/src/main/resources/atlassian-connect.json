@@ -1,6 +1,7 @@
 {
   "key": "com.thanh.connect.springboot.hellobosch",
-  "baseUrl": "http://localhost:8080",
+  "baseUrl": "${addon.base-url}",
+ 
   "name": "Hellobosch",
   "authentication": {
     "type": "jwt"

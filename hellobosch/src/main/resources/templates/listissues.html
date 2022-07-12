@@ -7,24 +7,12 @@
 </head>
 <body>
 <section id="content" class="ac-content">
-    <div th:text="'Email: '+ ${user.getEmail()}"></div>
-    <div th:text="'Name' + ${user.getName()}"></div>
-    <div th:text="'Total Issue: ' + ${listIssue.getTotal()}"></div>
+   <h1>Hello World</h1>
+            <button class="aui-button aui-button-primary" type="button" onclick="getAllStoryPoint()">
+             callAPI
+            </button>
+        
 
-    <table>
-        <thead>
-            <td> Project Name</td>
-            <td> Issue key</td>
-            <td> Summary</td>
-        </thead>
-        <th:block th:each="issue : ${listIssue.getIssues()}">
-            <tr>
-                <td th:text="${issue.projectName}">...</td>
-                <td th:text="${issue.key}">...</td>
-                <td th:text="${issue.summary}">...</td>
-            </tr>
-        </th:block>
-    </table>
 
 </section>
 </body>
