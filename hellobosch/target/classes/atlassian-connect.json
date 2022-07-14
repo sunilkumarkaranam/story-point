@@ -10,13 +10,15 @@
     "installed": "/installed",
     "uninstalled": "/uninstalled"
   },
-  "scopes": ["READ","ACT_AS_USER"],
+"scopes": ["READ","ACT_AS_USER"],
   "apiVersion": 1,
+
+
   "modules": {
     "generalPages": [
 
       {
-        "url": "/callapi",
+        "url": "/helloworld",
         "key": "callapi",
         "location": "system.top.navigation.bar",
         "name": {
