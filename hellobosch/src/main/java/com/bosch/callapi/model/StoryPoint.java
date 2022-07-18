@@ -1,27 +1,39 @@
 package com.bosch.callapi.model;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 public class StoryPoint {
-    private String issueKey;
-    private Integer storyPoint;
+	@JsonProperty("issueKey")
+	private String issueKey;
+	@JsonProperty("storyPoint")
+	private Integer storyPoint;
 
-    public StoryPoint(String issueKey, Integer storyPoint) {
-        this.issueKey = issueKey;
-        this.storyPoint = storyPoint;
-    }
+	public StoryPoint() {
+	}
 
-    public String getIssueKey() {
-        return issueKey;
-    }
+	public StoryPoint(String issueKey, Integer storyPoint) {
+		this.issueKey = issueKey;
+		this.storyPoint = storyPoint;
+	}
 
-    public void setIssueKey(String issueKey) {
-        this.issueKey = issueKey;
-    }
+	public String getIssueKey() {
+		return issueKey;
+	}
 
-    public Integer getStoryPoint() {
-        return storyPoint;
-    }
+	public void setIssueKey(String issueKey) {
+		this.issueKey = issueKey;
+	}
 
-    public void setStoryPoint(Integer storyPoint) {
-        this.storyPoint = storyPoint;
-    }
+	public Integer getStoryPoint() {
+		return storyPoint;
+	}
+
+	public void setStoryPoint(Integer storyPoint) {
+		this.storyPoint = storyPoint;
+	}
+
+	@Override
+	public String toString() {
+		return "StoryPoint [issueKey=" + issueKey + ", storyPoint=" + storyPoint + "]";
+	}
 }
